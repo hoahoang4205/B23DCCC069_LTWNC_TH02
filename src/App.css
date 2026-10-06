@@ -30,6 +30,12 @@
     gap: 12px;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .brand-mark {
     background: #fff1e6;
     border-radius: 10px;
@@ -1027,4 +1033,257 @@ h3 {
     .pagination {
         bottom: 10px;
     }
+}
+
+.app.dark.app-shell {
+    background: radial-gradient(circle at 85% 0%, #342316 0, transparent 32%), #17191f;
+    color: #f3f4f6;
+    color-scheme: dark;
+}
+
+.app.dark .app-header,
+.app.dark .stat-card,
+.app.dark .search-field,
+.app.dark .toolbar select,
+.app.dark .add-form,
+.app.dark .pagination,
+.app.dark .modal-box,
+.app.dark .time-box,
+.app.dark .state-box {
+    background: #22252c;
+    border-color: #3a3e47;
+    color: #f3f4f6;
+}
+
+.app.dark .brand-mark,
+.app.dark .stat-card.active {
+    background: #35271d;
+}
+
+.app.dark .brand p,
+.app.dark .assignment-count,
+.app.dark .stat-card span,
+.app.dark .meta,
+.app.dark .card-details p,
+.app.dark .detail-row,
+.app.dark .time-box span,
+.app.dark .card-description,
+.app.dark .add-form label,
+.app.dark .modal-form label,
+.app.dark .delete-content p,
+.app.dark .pagination,
+.app.dark .card-actions button:not(.complete-button),
+.app.dark .icon-button,
+.app.dark .details-cancel {
+    color: #b8c0cc;
+}
+
+.app.dark .section-heading h2,
+.app.dark .form-title h2,
+.app.dark .modal-heading h2,
+.app.dark .assignment-content h3,
+.app.dark .assignment-details,
+.app.dark .details-meta strong,
+.app.dark .full-description {
+    color: #f3f4f6;
+}
+
+.app.dark .assignment-card {
+    background: #22252c;
+    border-color: #3a3e47;
+    color: #f3f4f6;
+}
+
+.app.dark .assignment-card.overdue {
+    background: #302124;
+    border-left-color: #f87171;
+}
+
+.app.dark .assignment-card.completed {
+    background: #202a2a;
+    border-color: #35534b;
+}
+
+.app.dark .card-details,
+.app.dark .details-actions,
+.app.dark .details-heading {
+    border-color: #3a3e47;
+}
+
+.app.dark .toolbar select,
+.app.dark .search-field input,
+.app.dark .add-form input,
+.app.dark .add-form select,
+.app.dark .add-form textarea,
+.app.dark .modal-form input,
+.app.dark .modal-form select,
+.app.dark .modal-form textarea {
+    background: #191c22;
+    border-color: #424752;
+    color: #f3f4f6;
+}
+
+.app.dark .search-field input::placeholder,
+.app.dark .add-form input::placeholder,
+.app.dark .add-form textarea::placeholder,
+.app.dark .modal-form input::placeholder,
+.app.dark .modal-form textarea::placeholder {
+    color: #98a1ae;
+    opacity: 1;
+}
+
+.app.dark .stat-card.active {
+    border-color: #ff9b4a;
+}
+
+.app.dark .stat-card:hover {
+    border-color: #ff9b4a;
+}
+
+.app.dark .subject-tag {
+    background: #303640;
+    border-color: #48515f;
+    color: #d1d8e2;
+}
+
+.app.dark .submitted-badge {
+    background: #1e3047;
+    border-color: #365b83;
+    color: #9cc9ff;
+}
+
+.app.dark .countdown.overdue,
+.app.dark .countdown.warning,
+.app.dark .deadline-countdown {
+    color: #ff8b8b;
+}
+
+.app.dark .countdown.urgent {
+    color: #ffd166;
+}
+
+.app.dark .countdown.normal {
+    color: #6ee7b7;
+}
+
+.app.dark .card-actions button:not(.complete-button),
+.app.dark .pagination button,
+.app.dark .details-cancel {
+    background: #292d35;
+    border-color: #424752;
+}
+
+.app.dark .card-actions button:not(.complete-button):hover,
+.app.dark .details-cancel:hover {
+    background: #35271d;
+    border-color: #a75a24;
+    color: #ffb36f;
+}
+
+.app.dark .delete-icon {
+    background: #292d35 !important;
+    border-color: #424752 !important;
+    color: #c6cbd3 !important;
+}
+
+.app.dark .delete-icon:hover {
+    background: #3a2326 !important;
+    border-color: #9f454d !important;
+    color: #ff8b8b !important;
+}
+
+.app.dark .deadline-banner {
+    background: #1e3047;
+    border-color: #365b83;
+    color: #d5e7fa;
+}
+
+.app.dark .toast {
+    background: #183329;
+    border-color: #286447;
+    color: #a7f3d0;
+}
+
+.assignment-tools {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0 0 14px;
+}
+
+.pinned-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+    font-size: 13px;
+}
+
+.pinned-filter input {
+    width: 16px;
+    height: 16px;
+    accent-color: #ff6b00;
+}
+
+.btn-stress {
+    border: 0;
+    border-radius: 6px;
+    background: #ff6b00;
+    color: #fff;
+    padding: 9px 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-stress:hover {
+    background: #e85f00;
+}
+
+.assignment-virtual-list {
+    border-radius: 8px;
+}
+
+.pin-btn {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #fff;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.pin-btn:hover,
+.pin-btn.active {
+    border-color: #ffb37a;
+    background: #fff7f0;
+    color: #c65300;
+}
+
+.app.dark .pinned-filter {
+    color: #c2c9d3;
+}
+
+.app.dark .pin-btn {
+    border-color: #424752;
+    background: #292d35;
+    color: #c2c9d3;
+}
+
+.app.dark .pin-btn:hover,
+.app.dark .pin-btn.active {
+    border-color: #a75a24;
+    background: #35271d;
+    color: #ffb36f;
+}
+
+@media (max-width: 620px) {
+    .header-actions {
+        gap: 8px;
+    }
+
 }

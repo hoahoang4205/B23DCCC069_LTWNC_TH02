@@ -39,6 +39,9 @@ const assignmentsSlice = createSlice({
     deleteAssignment(state, action: PayloadAction<string>) {
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
+    bulkAdd(state, action: PayloadAction<Assignment[]>) {
+      state.items = action.payload;
+    },
     toggleSubmitted(state, action: PayloadAction<string>) {
       const assignment = state.items.find((item) => item.id === action.payload);
       if (!assignment) return;
@@ -60,5 +63,5 @@ const assignmentsSlice = createSlice({
   },
 });
 
-export const { addAssignment, deleteAssignment, toggleSubmitted, setFilters, resetFilters } = assignmentsSlice.actions;
+export const { addAssignment, deleteAssignment, toggleSubmitted, bulkAdd, setFilters, resetFilters } = assignmentsSlice.actions;
 export default assignmentsSlice.reducer;

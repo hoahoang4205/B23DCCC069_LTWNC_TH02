@@ -7,3 +7,151 @@ body { margin: 0; min-width: 320px; }
 button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: not-allowed; opacity: .45; }
+
+.app {
+	min-height: 100vh;
+	background: #f5f5f5;
+	color: #111827;
+	transition: background 0.2s, color 0.2s;
+}
+
+.app.dark {
+	background: #1a1a1a;
+	color: #f5f5f5;
+}
+
+.app.dark .app-header {
+	background: #222;
+	border-color: #3a3a3a;
+}
+
+.app.dark .assignment-card,
+.app.dark .product-card {
+	background: #2a2a2a;
+	border-color: #3a3a3a;
+	color: #f5f5f5;
+}
+
+.theme-toggle {
+	background: #ff6b00;
+	color: #fff;
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+}
+
+.theme-toggle:hover {
+	transform: scale(1.1);
+}
+
+.main-nav {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.main-nav a {
+	border-radius: 6px;
+	color: #374151;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+	background: #ff6b00;
+	color: #fff;
+}
+
+.app.dark .main-nav a {
+	color: #c2c9d3;
+}
+
+.app.dark .main-nav a:hover,
+.app.dark .main-nav a:focus-visible {
+	background: #ff6b00;
+	color: #fff;
+}
+
+.stats-page {
+	grid-column: 1 / -1;
+	width: 100%;
+	padding: 8px 0 32px;
+}
+
+.stats-page h1 {
+	margin: 0 0 22px;
+	font-size: 26px;
+}
+
+.stats-page h2 {
+	margin: 28px 0 14px;
+	font-size: 18px;
+}
+
+.stats-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.stat-box {
+	background: #fff;
+	border-left: 4px solid #ff6b00;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding: 20px;
+}
+
+.stat-box span {
+	color: #6b7280;
+	font-size: 13px;
+}
+
+.stat-box strong {
+	color: #111827;
+	font-size: 24px;
+}
+
+.subject-row {
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 6px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+	padding: 12px 16px;
+}
+
+.app.dark .stat-box,
+.app.dark .subject-row {
+	background: #22252c;
+	border-color: #3a3e47;
+	color: #f3f4f6;
+}
+
+.app.dark .stat-box span {
+	color: #b8c0cc;
+}
+
+.app.dark .stat-box strong {
+	color: #f3f4f6;
+}
+
+@media (max-width: 620px) {
+	.stats-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
